@@ -3,16 +3,17 @@
 :root {
     --fonte-principal: 'Poppins', sans-serif;
 
-    --background-color: #B799FF;
+    --background-color: #0A4D68;
     --cor-primaria: #E6FFFD;
-    --cor-secundaria: #8F43EE;
-    --cor-hover: #37306B;
+    --cor-secundaria: #088395;
+    --cor-hover: #00FFCA;
 }
 
 body {
     background-color: var(--background-color);
     color: var(--cor-primaria);
     min-height: 100vh;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,11 +24,11 @@ body {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 2.5em;
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: 20px;
 }
 
@@ -39,7 +40,7 @@ h3 {
 .box {
     border: 2px solid #ACBCFF;
     display: inline-block;
-    font-size: 4em;
+    font-size: 3em;
     padding: 10px;
     margin: 20px;
 }
@@ -54,6 +55,15 @@ h3 {
     font-size:36px;
     font-weight: 800;
     
+}
+
+.errou {
+    font-size:36px;
+    font-weight: 800;
+}
+
+.text-botaoJogarNovamente {
+    margin: 20px;
 }
 
 .btn-jogar {
@@ -77,4 +87,42 @@ h3 {
 .imagem {
     width: 300px;
     margin-bottom: 30px;
+}
+
+#maior-valor, #menor-valor {
+    color: #00FFCA;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 10vw;
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 5vw;
+        padding: 10px;
+    }
+
+    .mensagem div {
+        font-size: 1em;
+    }
+
+    .box {
+        font-size: 2em;
+    }
+
+    .text-numeroSecreto {
+        font-size: 3em;   
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .text-botaoJogarNovamente {
+        font-size: 7vw;
+    }
+
+    .text-numeroSecreto {
+        font-size: 7vw;
+    }
 }
